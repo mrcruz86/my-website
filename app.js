@@ -9,5 +9,5 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', function(req, res) {
 	res.render('index');
 });
-app.listen(8000);
-console.log('server listening to port 8000');
+app.listen(80);
+console.log('server listening to port 80');
