@@ -41,8 +41,13 @@ header h1 {
 	color: #009933;
 }
 
+#background_header img{
+	/*padding-top: 6em;*/
+	width: 100%;
+}
+
 #content {
-	padding-top: 10em;
+	margin-top: -40em;
 	height: 50em;
 	text-align: center;
 }
@@ -52,6 +57,7 @@ header h1 {
 }
 
 .xp div {
+	margin: .1em;
 	padding: 4em 1em;
 	background-color: #282828;
 }
