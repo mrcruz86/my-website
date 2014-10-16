@@ -2,7 +2,8 @@ var express = require('express');
 
 var app = express();
 app.set('views', __dirname + '/public/views');
-app.set('view engine', 'jade');
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'html');
 app.use(express.logger('dev'));
 app.use(express.static(__dirname + '/public'));
 
