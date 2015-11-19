@@ -1,14 +1,14 @@
-var express = require('express');
+var koa = require("koa");
+var serve = require("koa-static");
+// var route = require("koa-route");
+// var views = require("co-views");
+var app = koa();
 
-var app = express();
-app.set('views', __dirname + '/public/views');
-app.engine('html', require('ejs').renderFile);
-app.set('view engine', 'html');
-app.use(express.logger('dev'));
-app.use(express.static(__dirname + '/public'));
+// var render = views("");
+app.use(serve("public/"));
 
-app.get('/', function(req, res) {
-	res.render('index');
-});
+// app.use(route.get("/", function*() {
+// 	this.redirect("index.html");
+// }));
+
 app.listen(3000);
-console.log('server listening to port 3000');
