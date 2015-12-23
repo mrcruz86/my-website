@@ -1,0 +1,33 @@
+header
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  ul
+    display: flex
+    flex-direction: row
+
+    li
+      margin: 0 2em
+
+@media (min-width: $phone) and (max-width: $tablet)
+  header
+
+    ul
+      display: flex
+      flex-direction: column
+
+.container
+  margin-top: 2em
+  width: 100vw
+  display: flex
+  justify-content: center
+
+  .content
+    width: 1200px
+
+@media (min-width: $phone) and (max-width: $small-screen)
+  .container
+
+    .content
+      width: 100vw

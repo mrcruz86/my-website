@@ -8,5 +8,14 @@
     "koa": "^1.1.2",
     "koa-route": "^3.0.0",
     "koa-static": "^1.5.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.10.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-nodemon": "^2.0.4",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "node-bourbon": "^4.2.3"
   }
 }
